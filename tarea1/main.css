@@ -1,0 +1,62 @@
+/* Estilos gerais */
+table { width: 100%; border-collapse: collapse; }
+td { padding: 15px; }
+.header, .footer { background-color: #f7e5d0; text-align: center; }
+.nav, .content { vertical-align: top; }
+.nav { width: 25%; background-color: #f3f0e1; }
+.content { width: 75%; }
+
+/* Estilo da barra de navegação */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7e5d0;
+    padding: 10px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo-container img {
+    height: 50px;
+    margin-right: 10px;
+}
+.menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos do contêiner Baguette */
+.baguette-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+.baguette-text {
+    max-width: 50%;
+    padding-right: 20px;
+}
+.baguette-text h1 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.baguette-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+.baguette-image {
+    max-width: 50%;
+}
+.baguette-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

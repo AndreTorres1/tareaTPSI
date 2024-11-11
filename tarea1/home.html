@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migas Amigas - Panadería Artesanal</title>
+    <link rel="stylesheet" href="main.css">
+
+    <script>
+        function cambiarIdioma(idioma) {
+            document.querySelectorAll('.es, .pt').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.' + idioma).forEach(el => el.style.display = 'block');
+        }
+    </script>
+</head>
+<body onload="cambiarIdioma('es')">
+
+<p>
+    <a href="#" onclick="cambiarIdioma('es')">Español</a> |
+    <a href="homePT.html" onclick="cambiarIdioma('pt')">Portugués</a>
+</p>
+
+<table>
+    <tr>
+        <td colspan="2">
+            <nav class="topbar">
+                <div class="logo-container">
+                    <img src="imgs/logopadaria.jpg" alt="Logo Migas Amigas">
+                    <span>Migas Amigas</span>
+                </div>
+                <div class="menu">
+                    <a href="#panaderia">Panadería</a>
+                    <a href="#pasteleria">Pastelería</a>
+                    <a href="#empanadas">Empanadas</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </nav>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="content" colspan="2">
+            <h2>Bienvenido a Migas Amigas</h2>
+            <p>Descubra nuestro proceso artesanal de fabricación de pan:</p>
+            <img src="imgs/panaderia.jpg" alt="Proceso de fabricación de pan" width="100%" />
+        </td>
+    </tr>
+
+    <tr>
+        <td class="content" colspan="2">
+            <div class="baguette-container">
+                <div class="baguette-text">
+                    <h1 id="panaderia">Panadería</h1>
+                    <p>En nuestra panadería artesanal, hacemos cada pan con ingredientes frescos y naturales, siguiendo recetas tradicionales transmitidas de generación en generación. Disfrute de panes crujientes, suaves y sabrosos, horneados diariamente para ofrecer una experiencia auténtica y de calidad.</p>
+                </div>
+                <div class="baguette-image">
+                    <img src="imgs/pao.jpeg">
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="content" colspan="2">
+            <div class="baguette-container">
+                <div class="baguette-text">
+                    <h1 id="pasteleria">Pastelería - Confitería</h1>
+                    <p>En nuestra sección de confitería, encontrará una variedad de dulces artesanales preparados con esmero y los mejores ingredientes. Desde croissants y hojaldres hasta pasteles y galletas, cada pieza es un placer suave y delicioso, perfecto para acompañar momentos especiales o alegrar su día.</p>
+                </div>
+                <div class="baguette-image">
+                    <img src="imgs/boleria.jpg.webp">
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="content" colspan="2">
+            <div class="baguette-container">
+                <div class="baguette-text">
+                    <h1 id="empanadas">Empanadas</h1>
+                    <p>Nuestras empanadas artesanales están rellenas con ingredientes frescos y de alta calidad, combinando sabores tradicionales con toques únicos. Perfectas para cualquier ocasión, cada empanada se hornea con dedicación para obtener una masa crujiente y un relleno jugoso que encanta el paladar.</p>
+                </div>
+                <div class="baguette-image">
+                    <img src="imgs/empanadas.jpg">
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="content" colspan="2">
+            <div class="baguette-container">
+                <div class="baguette-text">
+                    <h1 id="bagguete">BAGUETTE</h1>
+                    <p>La baguette, también llamada pan francés, flauta o canilla, es una variedad de pan que se caracteriza por emplear harina de trigo, ser mucho más larga que ancha y tener una corteza crujiente. Es ideal para la elaboración de bocadillos.</p>
+                </div>
+                <div class="baguette-image">
+                    <img src="imgs/pan.jpg">
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="content" colspan="2">
+            <h3 id="contacto">Contacto</h3>
+            <p>Dirección: Rua das Migas, 25617<br />Teléfono: +34 611626162<br /></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41051.06807344176!2d-8.78874207717593!3d41.945582661373216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd25943600d8ef5f%3A0xf12f1c2446f41cbb!2sPanader%C3%ADa%20CURRAS%20(Goi%C3%A1n)!5e1!3m2!1spt-PT!2ses!4v1731327163969!5m2!1spt-PT!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

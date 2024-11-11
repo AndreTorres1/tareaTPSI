@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migas Amigas - Padaria Artesanal</title>
+    <link rel="stylesheet" href="main.css">
+
+    <script>
+        function mudarIdioma(idioma) {
+            document.querySelectorAll('.es, .pt').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.' + idioma).forEach(el => el.style.display = 'block');
+        }
+    </script>
+</head>
+<body onload="mudarIdioma('pt')">
+
+<!-- Links para mudar de idioma -->
+<p>
+    <a href="home.html" onclick="mudarIdioma('es')">Español</a> |
+    <a href="#" onclick="mudarIdioma('pt')">Português</a>
+</p>
+
+<!-- Estrutura principal da página usando uma tabela -->
+<table>
+    <tr>
+        <!-- Cabeçalho com barra de navegação -->
+        <td colspan="2">
+            <nav class="topbar">
+                <div class="logo-container">
+                    <img src="imgs/logopadaria.jpg" alt="Logo Migas Amigas"> <!-- Insira o caminho do logo aqui -->
+                    <span>Migas Amigas</span>
+                </div>
+                <div class="menu">
+                    <a href="#panaderia">Padaria</a>
+                    <a href="#pasteleria">Pastelaria</a>
+                    <a href="#empanadas">Empanadas</a>
+                    <a href="#contacto">Contato</a>
+                </div>
+            </nav>
+        </td>
+    </tr>
+
+    <!-- Boas-vindas -->
+    <tr>
+        <td class="content" colspan="2">
+            <h2>Bem-vindo à Migas Amigas</h2>
+            <p>Descubra nosso processo artesanal de fabricação de pão:</p>
+            <img src="imgs/panaderia.jpg" alt="Processo de fabricação do pão" width="100%" />
+        </td>
+    </tr>
+
+
+    <tr>
+        <td class="content" colspan="2">
+            <div class="baguette-container">
+                <div class="baguette-text">
+                    <h1 id="panaderia">Padaria</h1>
+                    <p>Na nossa padaria artesanal, fazemos cada pão com ingredientes frescos e naturais, seguindo receitas tradicionais passadas de geração em geração. Desfrute de pães crocantes, macios e saborosos, assados diariamente para proporcionar uma experiência autêntica e de qualidade.</p>
+
+                </div>
+                <div class="baguette-image">
+                    <img src="imgs/pao.jpeg"> <!-- Insira o caminho da imagem da baguette aqui -->
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="content" colspan="2">
+            <div class="baguette-container">
+                <div class="baguette-text">
+                    <h1 id="pasteleria">Pastelaria - Confeitaria</h1>
+                    <p>Na seção de confeitaria, você encontrará uma variedade de doces artesanais preparados com esmero e os melhores ingredientes. Desde croissants e folhados até bolos e biscoitos, cada peça é um prazer suave e delicioso, perfeito para acompanhar momentos especiais ou alegrar o seu dia.</p>
+
+                </div>
+                <div class="baguette-image">
+                    <img src="imgs/boleria.jpg.webp"> <!-- Insira o caminho da imagem da baguette aqui -->
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="content" colspan="2">
+            <div class="baguette-container">
+                <div class="baguette-text">
+                    <h1 id="empanadas">Empanadas</h1>
+                    <p>Nossas empanadas artesanais são recheadas com ingredientes frescos e de alta qualidade, combinando sabores tradicionais e toques únicos. Perfeitas para qualquer ocasião, cada empanada é assada com dedicação para obter uma massa crocante e um recheio suculento que encanta o paladar.</p>
+
+                </div>
+                <div class="baguette-image">
+                    <img src="imgs/empanadas.jpg"> <!-- Insira o caminho da imagem da baguette aqui -->
+                </div>
+            </div>
+        </td>
+    </tr>
+    <!-- Contêiner Baguette -->
+    <tr>
+        <td class="content" colspan="2">
+            <div class="baguette-container">
+                <div class="baguette-text">
+                    <h1 id="baguette">BAGUETTE</h1>
+                    <p>Baguette, também chamado pan francés, flauta ou canilla. Uma baguette ou baguete é uma variedade de pão que se caracteriza por empregar farinha de trigo, por ser muito mais comprida que larga e por sua crostinha crocante. É ideal para a elaboração de bocadillos.</p>
+                </div>
+                <div class="baguette-image">
+                    <img src="imgs/pan.jpg"> <!-- Insira o caminho da imagem da baguette aqui -->
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    <!-- Seção de Contato -->
+    <tr>
+        <td class="content" colspan="2">
+            <h3 id="contacto">Contato</h3>
+            <p>Endereço: Rua das Migas, 25617<br />Telefone: +34 611626162<br /></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41051.06807344176!2d-8.78874207717593!3d41.945582661373216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd25943600d8ef5f%3A0xf12f1c2446f41cbb!2sPanader%C3%ADa%20CURRAS%20(Goi%C3%A1n)!5e1!3m2!1spt-PT!2ses!4v1731327163969!5m2!1spt-PT!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
